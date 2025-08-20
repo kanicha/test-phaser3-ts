@@ -8,14 +8,19 @@ class MyGame extends Phaser.Scene {
     }
 
     preload() {
+        console.log("GAME >> Preload Start");
         this.load.setBaseURL("https://labs.phaser.io");
         this.load.image("sky", "assets/skies/space3.png");
         this.load.image("logo", "assets/sprites/phaser3-logo.png");
 
         this.load.audio("pop", "assets/audio/SoundEffects/p-ping.mp3");
+
+        console.log("GAME >> Preload Ended");
     }
 
     create() {
+        console.log("GAME >> Create Start");
+
         this.add.image(400, 300, "sky");
 
         this.spawnLogo(400, 100)
@@ -24,6 +29,8 @@ class MyGame extends Phaser.Scene {
         this.input.on("pointerdown", (pointer: Phaser.Input.Pointer) => {
             this.spawnLogo(pointer.x, pointer.y);
         });
+
+        console.log("GAME >> Create Ended");
     }
 
     spawnLogo(x: number, y: number) {
@@ -39,7 +46,7 @@ class MyGame extends Phaser.Scene {
 }
 
 const config: Phaser.Types.Core.GameConfig = {
-    type: Phaser.AUTO,
+    type: Phaser.CANVAS,
     width: 800,
     height: 600,
     physics: {
