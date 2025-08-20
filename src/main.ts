@@ -32,7 +32,7 @@ class MyGame extends Phaser.Scene {
         logo.setBounce(1, 1);
         logo.setCollideWorldBounds(true);
 
-        this.sound.play("pop");
+        this.sound.play("pop", { volume: 0.1 });
     }
 
     update() {}
