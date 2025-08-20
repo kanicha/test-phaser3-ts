@@ -5,8 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "tsc",
+    "preview": "vite preview",
+    "start" : "live-server ."
   },
   "keywords": [],
   "author": "",
@@ -30,5 +31,6 @@
     "url": "https://github.com/kanicha/test-phaser3-ts/issues"
   },
   "homepage": "https://github.com/kanicha/test-phaser3-ts#readme",
-  "description": ""
+  "description": "",
+  
 }
