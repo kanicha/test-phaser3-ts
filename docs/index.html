@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Phaser TS Chrome66</title>
-    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.12.1/dist/system.min.js"></script>
-    <script>
-      System.import('main.js').catch(console.error);
-    </script>
-  </head>
-  <body>
-    <h1>Phaser Game (Canvas, Chrome 66 Compatible)</h1>
-    <canvas></canvas>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Phaser Test</title>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.12.1/dist/system.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
+</head>
+<body>
+  <script>
+    System.import('./build/main.js').catch(console.error);
+  </script>
+</body>
 </html>
