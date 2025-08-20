@@ -1,3 +1,5 @@
+export {};
+
 System.register(["phaser"], function (exports_1, context_1) {
     "use strict";
     var __extends = (this && this.__extends) || (function () {
