@@ -7,8 +7,8 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "esnext",
-    "target": "esnext",
+    "module": "system",
+    "target": "es5",
     "moduleResolution": "node",
     "types": [],
     // For nodejs:
