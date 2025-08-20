@@ -5,6 +5,29 @@
     <title>Phaser3 + TS Test</title>
 </head>
 <body>
-    <script type="module" src="/src/main.ts"></script>
+    <script>
+        console.log("GAME >> GetScript")
+    </script>
+
+    <!-- <script type="module" src="/src/main.ts"></script> -->
+
+    <script>
+        // 1秒間に1文字ずつ文字が増えるスクリプト
+        const text = "testttttttttttttttttttttttttttttttttttttttttttttttttttt";
+        let i = 0;
+        const target = document.body;
+        target.textContent = "";
+
+        const interval = setInterval(() => {
+            if (i < text.length) {
+                target.textContent += text[i];
+                i++;
+            } else {
+                clearInterval(interval);
+            }
+        }, 1000);
+        console.log("GAME >> EndGetScript")
+
+    </script>
 </body>
 </html>
