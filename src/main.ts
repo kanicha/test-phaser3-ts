@@ -40,8 +40,8 @@ class MyGame extends Phaser.Scene {
 
 const config: Phaser.Types.Core.GameConfig = {
     type: Phaser.AUTO,
-    width: 1080,
-    height: 1920,
+    width: 800,
+    height: 600,
     physics: {
         default: "arcade",
         arcade: { gravity: {
